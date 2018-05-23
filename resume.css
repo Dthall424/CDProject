@@ -1,7 +1,18 @@
+* {
+  overflow: auto;
+  box-sizing: border-box;
+}
 header {
   text-align: center;
+  background-image: image();
+  background-size: auto;
 }
 h1 {
   text-align: center;
-
+}
+p {
+  text-align: left;
+}
+article {
+  float:right;
 }
