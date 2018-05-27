@@ -36,14 +36,6 @@ body {
 a:hover {
   color: white;
 }
-/*Setting the layout of the top of the home page*/
-#Main-header {
-  text-align: center;
-  color: deepskyblue;
-}
-header {
-  text-align: center;
-}
 /*Media Queries*/
 /*=============*/
 
