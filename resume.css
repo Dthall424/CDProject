@@ -1,7 +1,9 @@
 * {
   box-sizing: border-box;
 }
+
 /*Creating a flexbox, making it stick to the bottom of the browser toolbar, and styling it.*/
+
 html,
 body,
 .page {
@@ -16,39 +18,41 @@ body {
 }
 .page {
   display: flex;
-  flex-direction: column;
-  align-items: stretch;
+  flex-direction: column; /* keeps the contents in a column*/
+  align-items: stretch; /* stretches the contents acrost the available space*/
 }
 .page-header {
   flex: 0 0 auto;
-  background-color: black;
+  background-color: black; /* changes the color of the flexbox to black*/
 }
 .page-content {
   flex: 1 1 auto;
-  position: relative;
-  overflow-y: auto;
+  position: relative; /* makes the position of the content dependant on the position of another*/
+  overflow-y: auto; /* gives the scrolling ability to the content of the page */
 }
 .flexbox {
-  text-decoration: none;
-  color: deepskyblue;
+  text-decoration: none; /* gets rid of the underline on the links */
+  color: deepskyblue; /* changes the color of the text in the flexbox to deepskyblue*/
 }
 a:hover {
-  color: white;
+  color: white; /* changes the color of links to white when cursored over*/
 }
 header {
-  text-align: center;
-  margin-bottom: -20px
+  text-align: center; /* aligns the text in the header to the center*/
+  margin-bottom: -20px /* gets rid of the gap on the bottom of the header*/
 }
 .main-nav li {
-  list-style: none;
-  display: inline-block;
-  margin-right: 12px
+  list-style: none; /* gets rid of the browser default list style (bullits)*/
+  display: inline-block; /* changes the behavior of the element to inline block*/
+  margin-right: 12px /* adds space between main nav and the edge of the page*/
 }
 .name {
   text-align: center;
   margin: -5px 0 -20px 0
 }
+
 /*Setting the layout of the top of the home page*/
+
 #Main-header {
   text-align: center;
   color: deepskyblue;
@@ -68,6 +72,7 @@ figure {
   display: table;
   clear: both;
 }
+
 /*Media Queries*/
 /*=============*/
 

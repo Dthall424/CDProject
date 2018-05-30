@@ -48,6 +48,9 @@ header {
   text-align: center;
   margin: -5px 0 -20px 0
 }
+#submit {
+  border-radius: 5px;
+}
 /*Media Queries*/
 /*=============*/
 
@@ -65,5 +68,8 @@ header {
     }
     .page-header {
       line-height: 2.5em
+    }
+    #wrapper {
+      text-align: center;
     }
 }
