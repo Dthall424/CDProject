@@ -1,13 +1,24 @@
 /* Creating a Flexbox and making it stick to the top of the pages. */
-.mainhead {
-  text-align: center;
+.main-nav {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  margin-top: 0;
+  background-color: black;
+  overflow: auto;
+  height: 18px;
+}
+.sticky {
+  position: sticky;
+  top: 0;
 }
 
 .main-nav li a {
   text-decoration: none;
-  margin-left: 5px
+  margin-right: 20px;
+  color: deepskyblue;
 }
-.main-nav li {
-  list-style: none;
-  display: inline-block;
+.mainhead {
+  margin-top: 0;
+  text-align: center;
 }
