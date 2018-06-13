@@ -1,4 +1,21 @@
-/* Creating a Flexbox and making it stick to the top of the pages. */
+body {
+  font-family: sans-serif;
+  line-height: 1.5;
+  background-color: darkslategrey;
+  color: white;
+  width: 100%
+}
+.wrapper {
+  box-sizing: border-box;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 20px;
+}
+
+/* Creating a Flexbox for the main-nav, making it stick to the top of the pages,
+and styling it. */
+
 .main-nav {
   display: flex;
   list-style: none;
@@ -6,8 +23,9 @@
   margin-top: 0;
   background-color: black;
   overflow: auto;
-  height: 18px;
+  height: 25px;
 }
+
 .sticky {
   position: sticky;
   top: 0;
@@ -18,7 +36,19 @@
   margin-right: 20px;
   color: deepskyblue;
 }
+
+a:hover {
+  color: white;
+}
+
 .mainhead {
   margin-top: 0;
   text-align: center;
+  color: deepskyblue;
+}
+
+/*====MEDIA QUERIES=======*/
+
+@media (min-width: 769px) {
+
 }
