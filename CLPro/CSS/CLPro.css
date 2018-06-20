@@ -13,13 +13,26 @@ body {
   padding: 0 20px;
 }
 
+#sWrapper {
+  box-sizing: border-box;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 20px;
+  text-align: center;
+}
+
+div input {
+    margin-bottom: 20px;
+}
+
 /* Creating a Flexbox for the main-nav, making it stick to the top of the pages,
 and styling it. */
 
 .main-nav {
   display: flex;
   list-style: none;
-  justify-content: center;
+  justify-content: flex-start;
   margin-top: 0;
   background-color: black;
   overflow: auto;
@@ -34,6 +47,7 @@ and styling it. */
 .main-nav li a {
   text-decoration: none;
   margin-right: 20px;
+  margin-left: 20px;
   color: deepskyblue;
 }
 
@@ -48,7 +62,15 @@ a:hover {
 }
 
 /*====MEDIA QUERIES=======*/
+/*Anything written here will run if the browser size is above 769px*/
 
 @media (min-width: 769px) {
+  .flex {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
 
-}
+  .main-nav {
+    justify-content: center;
+  }
