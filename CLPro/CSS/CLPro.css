@@ -3,23 +3,19 @@ body {
   line-height: 1.5;
   background-color: darkslategrey;
   color: white;
-  width: 100%
+  width: 100%;
 }
+
+#sWrapper {
+  text-align: center;
+}
+
 .wrapper {
   box-sizing: border-box;
   margin: 0 auto;
   width: 100%;
-  max-width: 1200px;
+  max-width: 80%;
   padding: 0 20px;
-}
-
-#sWrapper {
-  box-sizing: border-box;
-  margin: 0 auto;
-  width: 100%;
-  max-width: 1200px;
-  padding: 0 20px;
-  text-align: center;
 }
 
 div input {
@@ -46,9 +42,9 @@ and styling it. */
 
 .main-nav li a {
   text-decoration: none;
-  margin-right: 20px;
-  margin-left: 20px;
   color: deepskyblue;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 a:hover {
@@ -67,10 +63,21 @@ a:hover {
 @media (min-width: 769px) {
   .flex {
     display: flex;
-    align-items: center;
     flex-wrap: wrap;
+    justify-content: space-between;
   }
 
   .main-nav {
     justify-content: center;
+  }
+
+  .main-nav li a {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .item {
+    width: 48%;
+    margin-right: auto;
+    padding-right: 1%;
   }
